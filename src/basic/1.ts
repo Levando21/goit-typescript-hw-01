@@ -7,7 +7,9 @@ let empty: null = null;
 
 //const callback = (a) => { return 100 + a };
 
-const callback = (a: number) => {
+type Func = (a: number) => number;
+
+const callback: Func = (a: number) => {
 	return 100 + a;
 };
 
